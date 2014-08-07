@@ -17,5 +17,5 @@ colors=colorRampPalette(rev(brewer.pal(11, "Spectral")))(100)
 lmat=rbind(c(4,3),c(1,2))
 
 png("Temperatures.png",height=8, width=12, units="in", res=300)
-heatmap.2(temps, trace="none", col=colors, dendogram=c("none"),density.info=c("none"), Rowv=NA, Colv=NA, lmat=lmat, lhei=c(1,4), lwid=c(0.5,0.1), margins=c(8,0))
+heatmap.2(temps, trace="none", col=colors, dendrogram=c("none"),density.info=c("none"), Rowv=NA, Colv=NA, lmat=lmat, lhei=c(1,4), lwid=c(0.5,0.1), margins=c(8,0))
 dev.off()
